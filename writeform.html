@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메일 쓰기창</title>
+    <link rel="stylesheet" href="./css/normarize.css">
+    <link rel="stylesheet" href="./css/writeform.css">
+</head>
+<body>
+    <form action="/" method="post">
+        <header class="flex-box flex-none">
+            <button class="theme-btn" type="submit">
+                <img src="./images/send-icon.svg" alt="send">
+                <span>보내기</span>
+            </button>
+        </header>
+        <main class="flex">
+            <section class="header flex-none">
+                <div class="line">
+                    <label for="to">받는 사람</label>
+                    <input type="email" name="to" id="to" autofocus>
+                </div>
+                <div class="line">
+                    <label for="cc">참조</label>
+                    <input type="email" name="cc" id="cc">
+                </div>
+                <div class="line">
+                    <label for="subject">제목</label>
+                    <input type="text" name="subject" id="subject">
+                </div>
+                <div class="line">
+                    <label for="attach-file">첨부</label>
+                    <div class="file-wrapper">
+                        <input type="file" name="attach-file">
+                        <button type="" for="attach-file" class="btn normal-btn">
+                            내 PC
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="editor flex">
+                <textarea name="content" id="" cols="30" rows="10"></textarea>
+            </section>
+        </main>
+        <footer class="flex-none flex-box">
+            <button type="submit" class="btn active-btn">보내기</button>
+            <button type="button" class="btn normal-btn">취소</button>
+        </footer>
+    </form>
+</body>
+</html>

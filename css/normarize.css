@@ -1,0 +1,73 @@
+.flex-box {
+    display: flex;
+    align-items: center;;
+}
+
+.flex {
+    flex: 1;
+}
+
+.flex-none {
+    flex: none;
+}
+
+.theme-btn {
+    display: inline-flex;
+    align-items: center;;
+    height: 100%;
+    padding: 0 10px;
+    border: 0;
+    background: transparent;
+    line-height: 100%;
+    color: inherit;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.theme-btn:hover {
+    background-color: #EDEBE8;
+}
+
+.theme-btn > img {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0 20px;
+    font-size: inherit;
+
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.active-btn {
+    background-color: #008755;
+    color: #fff;
+    border: 0; 
+}
+
+.normal-btn {
+    background-color: #fff;
+    color: inherit;
+    border: 1px solid #D1D1D1;
+}
+
+.file-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.file-wrapper > input[type="file"] {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}

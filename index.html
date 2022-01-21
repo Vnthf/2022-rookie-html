@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toast Rookie8</title>
-    <link href="./index.css" rel="stylesheet"/>
+    <link href="./css/index.css" rel="stylesheet"/>
 <body>
     <main>
         <header class="main-header">
@@ -16,7 +16,7 @@
             <div class="main-header-profile-wrap">
                 <ul>
                     <li>
-                        <a href="">로그인</a>
+                        <a href="login.html">로그인</a>
                     </li>
                     <li>
                         <a href="">고객센터</a>
@@ -255,5 +255,10 @@
             Copyright ⓒ NHN Ent Corp. All Rights Reserved.
         </footer>
     </main>
+    <script>
+      document.querySelector('.new-mail').addEventListener('click', function() {
+        window.open('writeform.html', '_blank', 'width=1024px,height=800px');    
+      });      
+    </script>
 </body>
 </html>
